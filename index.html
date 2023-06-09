@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assigment 05</title>
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Kanit&family=Playfair+Display:ital@0;1&family=Poppins:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header{
+            box-shadow: 0px 5px 12px 1px black;
+
+            position: fixed;
+            z-index: 2;
+            width: 100%;
+            height: 61px;
+            background-color: white;
+            top: 0;
+        }
+        header>img{
+            width: 15vw;
+            cursor: pointer;
+        }
+
+        nav{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+
+        }
+
+
+        header>nav>ul>li{
+            display: inline-block;
+            padding: 10px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            border-right: 2px solid black;
+        }
+
+        main{
+            position: relative;
+            margin-top: 61px;
+        }
+
+        main>aside{
+            position: absolute;
+            width: 270px;
+            top: 0;
+            bottom: 0;
+            background-color: purple;
+        }
+
+        main>aside>ul{
+            list-style: none;
+        }
+
+        main>aside>ul>li{
+            margin-top: 10px;
+            /*margin-bottom: 10px;*/
+            cursor: pointer;
+        }
+
+        main>aside>ul>li>a{
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            /*margin-bottom: 10px;*/
+            cursor: pointer;
+        }
+
+        main>aside>ul>li>a:hover{
+            color: crimson;
+            border-bottom: 2px solid crimson;
+        }
+
+        main>section{
+            margin-left: 270px;
+            padding: 10px;
+        }
+
+        /*main>section>section:nth-child(2)>p:first-child{*/
+        /*  margin-top: 0;*/
+        /*}*/
+
+        main>section>section:first-child{
+            /*border: 2px solid #14dc2f;*/
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            position: relative;
+            height: 300px;
+        }
+
+        main>section>section:first-child>div{
+            border: 2px solid #14dc2f;
+            height: 100%;
+            /*width: calc(100%/3);*/
+            /*position: absolute;*/
+            background-image: url("assets/cat.gif") ;
+            background-size:cover;
+            background-position:center;
+        }
+
+        main>section>section:first-child>div:first-child{
+            left: 0;
+
+        }
+
+        main>section>section:first-child>div:nth-child(2){
+            left: calc(100%/3);
+        }
+
+        main>section>section:first-child>div:last-child{
+            right: 0;
+        }
+
+        footer{
+            background-color: #282828;
+            height: 75px;
+        }
+
+        footer>h3{
+            text-align: center;
+            color: white;
+            margin-top: 0;
+            padding-top: 30px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 10px;
+            background-color: #363131;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: crimson;
+        }
+
+        @media all and (max-width: 425px){
+
+            main>section>section:first-child{
+                /*border: 2px solid #14dc2f;*/
+                grid-template-columns: repeat(1,1fr);
+                height: 600px;
+            }
+
+            main>section>section:first-child>div{
+                /*height: 200px;*/
+            }
+
+            aside{
+                display: none;
+            }
+
+            main>section{
+                margin-left: 0px;
+            }
+
+            nav{
+                position: relative;
+                width: max-content;
+            }
+
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: auto;
+                flex-direction: column;
+            }
+
+            li{
+                font-size: 11px;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://ijse.lk/images/logos/ijse.png" width="">
+
+    <nav>
+
+        <ul>
+            <li>Home</li>
+            <li>Resume</li>
+            <li>Contacts</li>
+            <li>About</li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+    <aside>
+
+        <ul>
+            <li><a href="https://dhanushkata.000webhostapp.com/?fname=&lname=&email=&message=">Home</a></li>
+            <li><a href="https://ijse.lk/">Resume</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+    </aside>
+
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut eligendi libero maxime natus
+                nesciunt. Asperiores, et, voluptatem. Aliquid earum esse impedit in iste officiis unde vel veniam
+                veritatis voluptatibus.</p>
+            <p>Adipisci atque commodi dicta dignissimos, enim eum iste molestias mollitia nemo numquam odit porro
+                possimus quam quia quo, recusandae repellendus sit ut veniam voluptatum. At eaque officia omnis quos
+                ut.</p>
+            <p>Accusantium aliquam aspernatur at atque autem consequuntur culpa cumque dolore, ea enim expedita facilis,
+                nesciunt nostrum, numquam officiis porro quasi soluta temporibus totam vel. Dolores earum enim facilis
+                quis velit.</p>
+            <p>Adipisci excepturi laudantium officiis, pariatur quia quisquam sapiente vitae voluptatem. Amet aperiam
+                natus tempora! Adipisci amet cumque dolores et fuga incidunt inventore itaque iure, nemo officia
+                officiis omnis reprehenderit veniam.</p>
+            <p>Deserunt est incidunt magni neque possimus praesentium suscipit tempora voluptate? Alias aliquid animi,
+                aperiam atque cupiditate deleniti dignissimos excepturi explicabo harum in incidunt inventore modi
+                mollitia quo quod similique tenetur!</p>
+            <p>Commodi eligendi et harum ipsum itaque nemo perferendis quidem reiciendis repudiandae unde? Accusamus
+                dolores facere fugit illo inventore iste maiores nulla sed ut. Facilis illum libero quas suscipit vero
+                voluptate?</p>
+            <p>Ab accusantium alias animi autem beatae commodi debitis delectus distinctio dolorem eius eveniet
+                exercitationem explicabo fuga fugit itaque iusto molestias mollitia nostrum pariatur quidem, repudiandae
+                sunt ullam vitae voluptates voluptatibus!</p>
+            <p>Dolore est fuga inventore, minus quaerat quam. Ab aliquam amet at commodi cumque debitis error fuga id
+                iusto molestiae, nesciunt omnis optio possimus, quibusdam quisquam, reiciendis sed velit voluptas
+                voluptate!</p>
+            <p>Atque fugiat, illum! Accusamus ad architecto aut beatae deserunt dolores enim explicabo facilis impedit,
+                iusto magni natus necessitatibus nemo nihil, nobis odit provident quo quos recusandae saepe temporibus
+                ut, voluptate?</p>
+            <p>Beatae minima pariatur quas sunt? Dolorem, officia sapiente. Atque blanditiis deserunt fugit incidunt,
+                iste laboriosam magni maiores molestiae natus neque non, recusandae repellendus soluta. Distinctio
+                ducimus ex illo molestiae perferendis.</p>
+            <p>Atque fugiat, illum! Accusamus ad architecto aut beatae deserunt dolores enim explicabo facilis impedit,
+                iusto magni natus necessitatibus nemo nihil, nobis odit provident quo quos recusandae saepe temporibus
+                ut, voluptate?</p>
+            <p>Beatae minima pariatur quas sunt? Dolorem, officia sapiente. Atque blanditiis deserunt fugit incidunt,
+                iste laboriosam magni maiores molestiae natus neque non, recusandae repellendus soluta. Distinctio
+                ducimus ex illo molestiae perferendis.</p>
+            <p>Atque fugiat, illum! Accusamus ad architecto aut beatae deserunt dolores enim explicabo facilis impedit,
+                iusto magni natus necessitatibus nemo nihil, nobis odit provident quo quos recusandae saepe temporibus
+                ut, voluptate?</p>
+            <p>Beatae minima pariatur quas sunt? Dolorem, officia sapiente. Atque blanditiis deserunt fugit incidunt,
+                iste laboriosam magni maiores molestiae natus neque non, recusandae repellendus soluta. Distinctio
+                ducimus ex illo molestiae perferendis.</p>
+            <p>Atque fugiat, illum! Accusamus ad architecto aut beatae deserunt dolores enim explicabo facilis impedit,
+                iusto magni natus necessitatibus nemo nihil, nobis odit provident quo quos recusandae saepe temporibus
+                ut, voluptate?</p>
+            <p>Beatae minima pariatur quas sunt? Dolorem, officia sapiente. Atque blanditiis deserunt fugit incidunt,
+                iste laboriosam magni maiores molestiae natus neque non, recusandae repellendus soluta. Distinctio
+                ducimus ex illo molestiae perferendis.</p>
+            <p>Atque fugiat, illum! Accusamus ad architecto aut beatae deserunt dolores enim explicabo facilis impedit,
+                iusto magni natus necessitatibus nemo nihil, nobis odit provident quo quos recusandae saepe temporibus
+                ut, voluptate?</p>
+            <p>Beatae minima pariatur quas sunt? Dolorem, officia sapiente. Atque blanditiis deserunt fugit incidunt,
+                iste laboriosam magni maiores molestiae natus neque non, recusandae repellendus soluta. Distinctio
+                ducimus ex illo molestiae perferendis.</p>
+        </section>
+
+    </section>
+</main>
+
+<footer>
+    <h3>Developed by Tharindu</h3>
+</footer>
+
+</body>
+</html>
